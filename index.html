@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Pokemon client</title>
+</head>
+
+
+<body>
+<h1>Pokemons!</h1>
+<br>
+<br>
+<div>
+  <h2>Buscar tipos del pokemon por ID</h2>
+  <label>Pokemon Id</label><input id="pokemonId">
+  <button id="getPokemonTypeById">Get PokemonType</button>
+</div>
+<br>
+<div>
+    <h2>Añadir pokemon a favoritos</h2>
+    <div>
+        <label>Pokemons Ids </label><input id="pokemonsIds" placeholder="1, 2, 3">
+
+      <label>User Id</label><input id="userId">
+     </div>
+     <div>
+      <button id="addPokemonToFav">Add Pokemon to favoritos</button>
+    </div>
+</div>
+<br>
+<div id="pokemonInfo">
+  </div>
+</body>
+
+  <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars.min-3ce4425.js">
+  </script>
+  <script id="pokemonTypeTemplate" type="text/x-handlebars-template">
+    <div>
+        <p><strong>Tipos</strong></p>
+        <ul>
+            {{#each resp}}
+            <li> {{name}}
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+  </script>
+
+  <script id="pokemonFavTemplate" type="text/x-handlebars-template">
+    <div>
+      <p><strong>Hemos añadido un pokemon</strong></p>
+        <ul>
+            {{resp}}
+        </ul>
+    </div>
+  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
+  </html>
