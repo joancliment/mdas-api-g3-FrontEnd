@@ -1,4 +1,4 @@
-Para que funcione este frontend hay que arrancar primero el PokemonWebServer que est· en el GITHUB https://github.com/diegocas0807/mdas-api-g3
-que hemos hecho en grupo. 
+Para que funcione este frontend hay que arrancar primero el PokemonWebServer que est√° en el GITHUB https://github.com/joancliment/mdas-api-g3-master.git
+
 Hay que ir con cuidado con el CORS.
-DespuÈs una vez arrancado el webserver de spring, ejecutas el index.html de esta pr·ctica y ya puedes ver los tipos de un pokemon, y aÒadirlos a favoritos.
+Despu√©s una vez arrancado el webserver de spring, ejecutas el index.html de esta pr√°ctica y ya puedes ver los tipos de un pokemon, y a√±adirlos a favoritos.
